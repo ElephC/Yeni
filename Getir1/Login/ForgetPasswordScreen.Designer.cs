@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.lblAutomaticMessage = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSend = new System.Windows.Forms.Button();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +52,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(282, 399);
             this.panel1.TabIndex = 10;
+            // 
+            // btnBack
+            // 
+            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(12, 355);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(113, 32);
+            this.btnBack.TabIndex = 10;
+            this.btnBack.Text = "Geri Dön";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
             // lblAutomaticMessage
             // 
@@ -109,22 +125,6 @@
             this.txtEmail.Size = new System.Drawing.Size(217, 27);
             this.txtEmail.TabIndex = 5;
             // 
-            // btnBack
-            // 
-            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(12, 355);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(113, 32);
-            this.btnBack.TabIndex = 10;
-            this.btnBack.Text = "Geri Dön";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
-            // 
             // ForgetPasswordScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,7 +136,6 @@
             this.Name = "ForgetPasswordScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Şifremi Unuttum";
-            this.Deactivate += new System.EventHandler(this.ForgetPasswordScreen_Deactivate);
             this.Load += new System.EventHandler(this.ForgetPasswordScreen_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

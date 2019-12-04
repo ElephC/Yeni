@@ -29,11 +29,6 @@ namespace Getir1
             lblAutomaticMessage.Visible = false;
         }
 
-        private void ForgetPasswordScreen_Deactivate(object sender, EventArgs e)
-        {
-            lblAutomaticMessage.Visible = false;
-        }
-        
         private void btnBack_Click_1(object sender, EventArgs e)
         {
             LogInScreen f = new LogInScreen();
@@ -49,17 +44,17 @@ namespace Getir1
                 sc.Port = 587;
                 sc.Host = "smtp.gmail.com";
                 sc.EnableSsl = true;
-                sc.Credentials = new NetworkCredential("eleph.cnylmz@gmail.com", "can.yilmaz");
+                sc.Credentials = new NetworkCredential("sanalpazar2020@gmail.com", "Sanalpazar123");
 
                 MailMessage mail = new MailMessage();
 
-                mail.From = new MailAddress("eleph.cnylmz@gmail.com", "Sanal Pazar");
+                mail.From = new MailAddress("sanalpazar2020@gmail.com", "Sanal Pazar");
 
                 mail.To.Add(txtEmail.Text);
 
                 mail.Subject = "Yeni Şifre";
                 mail.IsBodyHtml = true;
-                mail.Body = "000111222";
+                mail.Body = "Yeni Şifreniz : 000111222";
 
                 sc.Send(mail);
 
