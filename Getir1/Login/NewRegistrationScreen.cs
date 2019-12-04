@@ -1,4 +1,5 @@
-﻿using Getir1.Properties;
+﻿using Getir1.Data;
+using Getir1.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace Getir1
 {
     public partial class NewRegistrationScreen : Form
     {
+        SqlData sqlData;
         public NewRegistrationScreen()
         {
             InitializeComponent();
@@ -41,5 +43,20 @@ namespace Getir1
             this.Close();
         }
 
+        private void btnKayitOl_Click(object sender, EventArgs e)
+        {
+            sqlData = new SqlData();
+            if (sqlData.NewUser(txtEmail.Text, txtPassword.Text, txtAd.Text, txtSurname.Text, Convert.ToInt32(txtPhone.Text)))
+            {
+                MessageBox.Show("Basarili bir sekilde kayit olundu");
+                LogInScreen f = new LogInScreen();
+                f.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Kayit sirasinda bir hata meydana geldi.");
+            }
+        }
     }
 }

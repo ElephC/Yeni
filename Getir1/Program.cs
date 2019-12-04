@@ -16,7 +16,7 @@ namespace Getir1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LogInScreen());
+            Application.Run(new Form2("Test"));
         }
     }
 }

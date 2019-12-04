@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblName = new System.Windows.Forms.Label();
             this.ayarlarBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.SepetBtn = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpst = new System.Windows.Forms.FlowLayoutPanel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpmy = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -58,7 +59,7 @@
             this.button48 = new System.Windows.Forms.Button();
             this.button45 = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpmk = new System.Windows.Forms.FlowLayoutPanel();
             this.button60 = new System.Windows.Forms.Button();
             this.button59 = new System.Windows.Forms.Button();
             this.button58 = new System.Windows.Forms.Button();
@@ -70,7 +71,7 @@
             this.button52 = new System.Windows.Forms.Button();
             this.button44 = new System.Windows.Forms.Button();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpme = new System.Windows.Forms.FlowLayoutPanel();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button49 = new System.Windows.Forms.Button();
@@ -78,9 +79,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.flpsy = new System.Windows.Forms.FlowLayoutPanel();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
@@ -92,7 +91,7 @@
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpsk = new System.Windows.Forms.FlowLayoutPanel();
             this.button30 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
@@ -109,6 +108,7 @@
             this.button24 = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.flpb = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -116,28 +116,41 @@
             this.tabPage2.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
+            this.flpmy.SuspendLayout();
             this.tabPage6.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
+            this.flpmk.SuspendLayout();
             this.tabPage7.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
+            this.flpme.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage11.SuspendLayout();
-            this.flowLayoutPanel5.SuspendLayout();
+            this.flpsy.SuspendLayout();
             this.tabPage12.SuspendLayout();
-            this.flowLayoutPanel6.SuspendLayout();
+            this.flpsk.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel1.Controls.Add(this.lblName);
             this.panel1.Controls.Add(this.ayarlarBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 41);
+            this.panel1.Size = new System.Drawing.Size(1032, 41);
             this.panel1.TabIndex = 1;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Roboto Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblName.ForeColor = System.Drawing.Color.White;
+            this.lblName.Location = new System.Drawing.Point(13, 13);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(100, 15);
+            this.lblName.TabIndex = 1;
+            this.lblName.Text = "HOŞGELDİNİZ ...";
             // 
             // ayarlarBtn
             // 
@@ -146,7 +159,7 @@
             this.ayarlarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ayarlarBtn.Font = new System.Drawing.Font("Book Antiqua", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ayarlarBtn.ForeColor = System.Drawing.Color.White;
-            this.ayarlarBtn.Location = new System.Drawing.Point(718, 5);
+            this.ayarlarBtn.Location = new System.Drawing.Point(950, 5);
             this.ayarlarBtn.Name = "ayarlarBtn";
             this.ayarlarBtn.Size = new System.Drawing.Size(75, 30);
             this.ayarlarBtn.TabIndex = 0;
@@ -158,9 +171,9 @@
             this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel2.Controls.Add(this.SepetBtn);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 407);
+            this.panel2.Location = new System.Drawing.Point(0, 538);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 43);
+            this.panel2.Size = new System.Drawing.Size(1032, 43);
             this.panel2.TabIndex = 2;
             // 
             // SepetBtn
@@ -171,12 +184,14 @@
             this.SepetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SepetBtn.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SepetBtn.ForeColor = System.Drawing.Color.White;
-            this.SepetBtn.Location = new System.Drawing.Point(708, 6);
+            this.SepetBtn.Location = new System.Drawing.Point(940, 6);
             this.SepetBtn.Name = "SepetBtn";
             this.SepetBtn.Size = new System.Drawing.Size(83, 31);
             this.SepetBtn.TabIndex = 0;
             this.SepetBtn.Text = "Sepet";
+            this.SepetBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.SepetBtn.UseVisualStyleBackColor = false;
+            this.SepetBtn.Click += new System.EventHandler(this.SepetBtn_Click);
             // 
             // tabControl1
             // 
@@ -185,52 +200,52 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Font = new System.Drawing.Font("Book Antiqua", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tabControl1.Font = new System.Drawing.Font("Book Antiqua", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabControl1.HotTrack = true;
             this.tabControl1.Location = new System.Drawing.Point(0, 41);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(800, 366);
+            this.tabControl1.Size = new System.Drawing.Size(1032, 497);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
             // 
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabPage1.Controls.Add(this.flowLayoutPanel1);
+            this.tabPage1.Controls.Add(this.flpst);
             this.tabPage1.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage1.Size = new System.Drawing.Size(792, 338);
+            this.tabPage1.Size = new System.Drawing.Size(1024, 467);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Son Tercihlerim";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel1
+            // flpst
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Font = new System.Drawing.Font("Book Antiqua", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.flowLayoutPanel1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(782, 328);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.flpst.AutoScroll = true;
+            this.flpst.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flpst.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.flpst.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpst.Font = new System.Drawing.Font("Book Antiqua", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.flpst.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.flpst.Location = new System.Drawing.Point(3, 3);
+            this.flpst.Name = "flpst";
+            this.flpst.Size = new System.Drawing.Size(1014, 457);
+            this.flpst.TabIndex = 0;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tabControl2);
             this.tabPage2.Font = new System.Drawing.Font("Book Antiqua", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 338);
+            this.tabPage2.Size = new System.Drawing.Size(1024, 467);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Meyve";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -242,49 +257,49 @@
             this.tabControl2.Controls.Add(this.tabPage6);
             this.tabControl2.Controls.Add(this.tabPage7);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl2.Font = new System.Drawing.Font("Book Antiqua", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tabControl2.Font = new System.Drawing.Font("Book Antiqua", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabControl2.Location = new System.Drawing.Point(3, 3);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(786, 332);
+            this.tabControl2.Size = new System.Drawing.Size(1018, 461);
             this.tabControl2.TabIndex = 0;
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.flowLayoutPanel2);
+            this.tabPage5.Controls.Add(this.flpmy);
             this.tabPage5.Location = new System.Drawing.Point(4, 4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(778, 304);
+            this.tabPage5.Size = new System.Drawing.Size(1010, 431);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "Yazlık";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel2
+            // flpmy
             // 
-            this.flowLayoutPanel2.Controls.Add(this.button1);
-            this.flowLayoutPanel2.Controls.Add(this.button2);
-            this.flowLayoutPanel2.Controls.Add(this.button3);
-            this.flowLayoutPanel2.Controls.Add(this.button4);
-            this.flowLayoutPanel2.Controls.Add(this.button5);
-            this.flowLayoutPanel2.Controls.Add(this.button6);
-            this.flowLayoutPanel2.Controls.Add(this.button7);
-            this.flowLayoutPanel2.Controls.Add(this.button8);
-            this.flowLayoutPanel2.Controls.Add(this.button9);
-            this.flowLayoutPanel2.Controls.Add(this.button39);
-            this.flowLayoutPanel2.Controls.Add(this.button40);
-            this.flowLayoutPanel2.Controls.Add(this.button41);
-            this.flowLayoutPanel2.Controls.Add(this.button42);
-            this.flowLayoutPanel2.Controls.Add(this.button43);
-            this.flowLayoutPanel2.Controls.Add(this.button46);
-            this.flowLayoutPanel2.Controls.Add(this.button47);
-            this.flowLayoutPanel2.Controls.Add(this.button48);
-            this.flowLayoutPanel2.Controls.Add(this.button45);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(772, 298);
-            this.flowLayoutPanel2.TabIndex = 20;
+            this.flpmy.Controls.Add(this.button1);
+            this.flpmy.Controls.Add(this.button2);
+            this.flpmy.Controls.Add(this.button3);
+            this.flpmy.Controls.Add(this.button4);
+            this.flpmy.Controls.Add(this.button5);
+            this.flpmy.Controls.Add(this.button6);
+            this.flpmy.Controls.Add(this.button7);
+            this.flpmy.Controls.Add(this.button8);
+            this.flpmy.Controls.Add(this.button9);
+            this.flpmy.Controls.Add(this.button39);
+            this.flpmy.Controls.Add(this.button40);
+            this.flpmy.Controls.Add(this.button41);
+            this.flpmy.Controls.Add(this.button42);
+            this.flpmy.Controls.Add(this.button43);
+            this.flpmy.Controls.Add(this.button46);
+            this.flpmy.Controls.Add(this.button47);
+            this.flpmy.Controls.Add(this.button48);
+            this.flpmy.Controls.Add(this.button45);
+            this.flpmy.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpmy.Location = new System.Drawing.Point(3, 3);
+            this.flpmy.Name = "flpmy";
+            this.flpmy.Size = new System.Drawing.Size(1004, 425);
+            this.flpmy.TabIndex = 20;
             // 
             // button1
             // 
@@ -360,7 +375,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(3, 88);
+            this.button9.Location = new System.Drawing.Point(739, 3);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(86, 79);
             this.button9.TabIndex = 8;
@@ -369,7 +384,7 @@
             // 
             // button39
             // 
-            this.button39.Location = new System.Drawing.Point(95, 88);
+            this.button39.Location = new System.Drawing.Point(831, 3);
             this.button39.Name = "button39";
             this.button39.Size = new System.Drawing.Size(86, 79);
             this.button39.TabIndex = 9;
@@ -378,7 +393,7 @@
             // 
             // button40
             // 
-            this.button40.Location = new System.Drawing.Point(187, 88);
+            this.button40.Location = new System.Drawing.Point(3, 88);
             this.button40.Name = "button40";
             this.button40.Size = new System.Drawing.Size(86, 79);
             this.button40.TabIndex = 10;
@@ -387,7 +402,7 @@
             // 
             // button41
             // 
-            this.button41.Location = new System.Drawing.Point(279, 88);
+            this.button41.Location = new System.Drawing.Point(95, 88);
             this.button41.Name = "button41";
             this.button41.Size = new System.Drawing.Size(86, 79);
             this.button41.TabIndex = 11;
@@ -396,7 +411,7 @@
             // 
             // button42
             // 
-            this.button42.Location = new System.Drawing.Point(371, 88);
+            this.button42.Location = new System.Drawing.Point(187, 88);
             this.button42.Name = "button42";
             this.button42.Size = new System.Drawing.Size(86, 79);
             this.button42.TabIndex = 12;
@@ -405,7 +420,7 @@
             // 
             // button43
             // 
-            this.button43.Location = new System.Drawing.Point(463, 88);
+            this.button43.Location = new System.Drawing.Point(279, 88);
             this.button43.Name = "button43";
             this.button43.Size = new System.Drawing.Size(86, 79);
             this.button43.TabIndex = 13;
@@ -414,7 +429,7 @@
             // 
             // button46
             // 
-            this.button46.Location = new System.Drawing.Point(555, 88);
+            this.button46.Location = new System.Drawing.Point(371, 88);
             this.button46.Name = "button46";
             this.button46.Size = new System.Drawing.Size(86, 79);
             this.button46.TabIndex = 16;
@@ -423,7 +438,7 @@
             // 
             // button47
             // 
-            this.button47.Location = new System.Drawing.Point(647, 88);
+            this.button47.Location = new System.Drawing.Point(463, 88);
             this.button47.Name = "button47";
             this.button47.Size = new System.Drawing.Size(86, 79);
             this.button47.TabIndex = 17;
@@ -432,7 +447,7 @@
             // 
             // button48
             // 
-            this.button48.Location = new System.Drawing.Point(3, 173);
+            this.button48.Location = new System.Drawing.Point(555, 88);
             this.button48.Name = "button48";
             this.button48.Size = new System.Drawing.Size(86, 79);
             this.button48.TabIndex = 18;
@@ -441,7 +456,7 @@
             // 
             // button45
             // 
-            this.button45.Location = new System.Drawing.Point(95, 173);
+            this.button45.Location = new System.Drawing.Point(647, 88);
             this.button45.Name = "button45";
             this.button45.Size = new System.Drawing.Size(86, 79);
             this.button45.TabIndex = 19;
@@ -450,32 +465,32 @@
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.flowLayoutPanel3);
+            this.tabPage6.Controls.Add(this.flpmk);
             this.tabPage6.Location = new System.Drawing.Point(4, 4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(778, 304);
+            this.tabPage6.Size = new System.Drawing.Size(803, 431);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Kışlık";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel3
+            // flpmk
             // 
-            this.flowLayoutPanel3.Controls.Add(this.button60);
-            this.flowLayoutPanel3.Controls.Add(this.button59);
-            this.flowLayoutPanel3.Controls.Add(this.button58);
-            this.flowLayoutPanel3.Controls.Add(this.button57);
-            this.flowLayoutPanel3.Controls.Add(this.button56);
-            this.flowLayoutPanel3.Controls.Add(this.button55);
-            this.flowLayoutPanel3.Controls.Add(this.button54);
-            this.flowLayoutPanel3.Controls.Add(this.button53);
-            this.flowLayoutPanel3.Controls.Add(this.button52);
-            this.flowLayoutPanel3.Controls.Add(this.button44);
-            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(772, 298);
-            this.flowLayoutPanel3.TabIndex = 28;
+            this.flpmk.Controls.Add(this.button60);
+            this.flpmk.Controls.Add(this.button59);
+            this.flpmk.Controls.Add(this.button58);
+            this.flpmk.Controls.Add(this.button57);
+            this.flpmk.Controls.Add(this.button56);
+            this.flpmk.Controls.Add(this.button55);
+            this.flpmk.Controls.Add(this.button54);
+            this.flpmk.Controls.Add(this.button53);
+            this.flpmk.Controls.Add(this.button52);
+            this.flpmk.Controls.Add(this.button44);
+            this.flpmk.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpmk.Location = new System.Drawing.Point(3, 3);
+            this.flpmk.Name = "flpmk";
+            this.flpmk.Size = new System.Drawing.Size(797, 425);
+            this.flpmk.TabIndex = 28;
             // 
             // button60
             // 
@@ -569,25 +584,25 @@
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.flowLayoutPanel4);
+            this.tabPage7.Controls.Add(this.flpme);
             this.tabPage7.Location = new System.Drawing.Point(4, 4);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(778, 304);
+            this.tabPage7.Size = new System.Drawing.Size(803, 431);
             this.tabPage7.TabIndex = 2;
             this.tabPage7.Text = "Egzotik";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel4
+            // flpme
             // 
-            this.flowLayoutPanel4.Controls.Add(this.button11);
-            this.flowLayoutPanel4.Controls.Add(this.button12);
-            this.flowLayoutPanel4.Controls.Add(this.button49);
-            this.flowLayoutPanel4.Controls.Add(this.button50);
-            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(778, 304);
-            this.flowLayoutPanel4.TabIndex = 24;
+            this.flpme.Controls.Add(this.button11);
+            this.flpme.Controls.Add(this.button12);
+            this.flpme.Controls.Add(this.button49);
+            this.flpme.Controls.Add(this.button50);
+            this.flpme.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpme.Location = new System.Drawing.Point(0, 0);
+            this.flpme.Name = "flpme";
+            this.flpme.Size = new System.Drawing.Size(803, 431);
+            this.flpme.TabIndex = 24;
             // 
             // button11
             // 
@@ -629,10 +644,10 @@
             // 
             this.tabPage3.Controls.Add(this.tabControl3);
             this.tabPage3.Font = new System.Drawing.Font("Book Antiqua", 14.25F);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Location = new System.Drawing.Point(4, 26);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(792, 338);
+            this.tabPage3.Size = new System.Drawing.Size(1024, 467);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Sebze";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -647,61 +662,41 @@
             this.tabControl3.Location = new System.Drawing.Point(3, 3);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(786, 332);
+            this.tabControl3.Size = new System.Drawing.Size(1018, 461);
             this.tabControl3.TabIndex = 0;
             // 
             // tabPage11
             // 
-            this.tabPage11.Controls.Add(this.flowLayoutPanel5);
+            this.tabPage11.Controls.Add(this.flpsy);
             this.tabPage11.Location = new System.Drawing.Point(4, 4);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(778, 304);
+            this.tabPage11.Size = new System.Drawing.Size(1010, 433);
             this.tabPage11.TabIndex = 0;
             this.tabPage11.Text = "Yazlık";
             this.tabPage11.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel5
+            // flpsy
             // 
-            this.flowLayoutPanel5.Controls.Add(this.button17);
-            this.flowLayoutPanel5.Controls.Add(this.button10);
-            this.flowLayoutPanel5.Controls.Add(this.button13);
-            this.flowLayoutPanel5.Controls.Add(this.button14);
-            this.flowLayoutPanel5.Controls.Add(this.button15);
-            this.flowLayoutPanel5.Controls.Add(this.button16);
-            this.flowLayoutPanel5.Controls.Add(this.button18);
-            this.flowLayoutPanel5.Controls.Add(this.button19);
-            this.flowLayoutPanel5.Controls.Add(this.button20);
-            this.flowLayoutPanel5.Controls.Add(this.button21);
-            this.flowLayoutPanel5.Controls.Add(this.button22);
-            this.flowLayoutPanel5.Controls.Add(this.button23);
-            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(772, 298);
-            this.flowLayoutPanel5.TabIndex = 18;
-            // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(3, 3);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(86, 79);
-            this.button17.TabIndex = 1;
-            this.button17.Text = "Domates";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(95, 3);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(86, 79);
-            this.button10.TabIndex = 17;
-            this.button10.Text = "Salatalık";
-            this.button10.UseVisualStyleBackColor = true;
+            this.flpsy.Controls.Add(this.button13);
+            this.flpsy.Controls.Add(this.button14);
+            this.flpsy.Controls.Add(this.button15);
+            this.flpsy.Controls.Add(this.button16);
+            this.flpsy.Controls.Add(this.button18);
+            this.flpsy.Controls.Add(this.button19);
+            this.flpsy.Controls.Add(this.button20);
+            this.flpsy.Controls.Add(this.button21);
+            this.flpsy.Controls.Add(this.button22);
+            this.flpsy.Controls.Add(this.button23);
+            this.flpsy.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpsy.Location = new System.Drawing.Point(3, 3);
+            this.flpsy.Name = "flpsy";
+            this.flpsy.Size = new System.Drawing.Size(1004, 427);
+            this.flpsy.TabIndex = 18;
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(187, 3);
+            this.button13.Location = new System.Drawing.Point(3, 3);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(86, 79);
             this.button13.TabIndex = 4;
@@ -710,7 +705,7 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(279, 3);
+            this.button14.Location = new System.Drawing.Point(95, 3);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(86, 79);
             this.button14.TabIndex = 5;
@@ -719,7 +714,7 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(371, 3);
+            this.button15.Location = new System.Drawing.Point(187, 3);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(86, 79);
             this.button15.TabIndex = 6;
@@ -728,7 +723,7 @@
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(463, 3);
+            this.button16.Location = new System.Drawing.Point(279, 3);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(86, 79);
             this.button16.TabIndex = 7;
@@ -737,7 +732,7 @@
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(555, 3);
+            this.button18.Location = new System.Drawing.Point(371, 3);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(86, 79);
             this.button18.TabIndex = 9;
@@ -746,7 +741,7 @@
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(647, 3);
+            this.button19.Location = new System.Drawing.Point(463, 3);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(86, 79);
             this.button19.TabIndex = 10;
@@ -755,7 +750,7 @@
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(3, 88);
+            this.button20.Location = new System.Drawing.Point(555, 3);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(86, 79);
             this.button20.TabIndex = 11;
@@ -764,7 +759,7 @@
             // 
             // button21
             // 
-            this.button21.Location = new System.Drawing.Point(95, 88);
+            this.button21.Location = new System.Drawing.Point(647, 3);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(86, 79);
             this.button21.TabIndex = 12;
@@ -773,7 +768,7 @@
             // 
             // button22
             // 
-            this.button22.Location = new System.Drawing.Point(187, 88);
+            this.button22.Location = new System.Drawing.Point(739, 3);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(86, 79);
             this.button22.TabIndex = 13;
@@ -782,7 +777,7 @@
             // 
             // button23
             // 
-            this.button23.Location = new System.Drawing.Point(279, 88);
+            this.button23.Location = new System.Drawing.Point(831, 3);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(86, 79);
             this.button23.TabIndex = 14;
@@ -791,37 +786,37 @@
             // 
             // tabPage12
             // 
-            this.tabPage12.Controls.Add(this.flowLayoutPanel6);
+            this.tabPage12.Controls.Add(this.flpsk);
             this.tabPage12.Location = new System.Drawing.Point(4, 4);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(778, 304);
+            this.tabPage12.Size = new System.Drawing.Size(803, 433);
             this.tabPage12.TabIndex = 1;
             this.tabPage12.Text = "Kışlık";
             this.tabPage12.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel6
+            // flpsk
             // 
-            this.flowLayoutPanel6.Controls.Add(this.button30);
-            this.flowLayoutPanel6.Controls.Add(this.button37);
-            this.flowLayoutPanel6.Controls.Add(this.button36);
-            this.flowLayoutPanel6.Controls.Add(this.button35);
-            this.flowLayoutPanel6.Controls.Add(this.button34);
-            this.flowLayoutPanel6.Controls.Add(this.button33);
-            this.flowLayoutPanel6.Controls.Add(this.button32);
-            this.flowLayoutPanel6.Controls.Add(this.button31);
-            this.flowLayoutPanel6.Controls.Add(this.button29);
-            this.flowLayoutPanel6.Controls.Add(this.button28);
-            this.flowLayoutPanel6.Controls.Add(this.button27);
-            this.flowLayoutPanel6.Controls.Add(this.button26);
-            this.flowLayoutPanel6.Controls.Add(this.button25);
-            this.flowLayoutPanel6.Controls.Add(this.button24);
-            this.flowLayoutPanel6.Controls.Add(this.button38);
-            this.flowLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(772, 298);
-            this.flowLayoutPanel6.TabIndex = 32;
+            this.flpsk.Controls.Add(this.button30);
+            this.flpsk.Controls.Add(this.button37);
+            this.flpsk.Controls.Add(this.button36);
+            this.flpsk.Controls.Add(this.button35);
+            this.flpsk.Controls.Add(this.button34);
+            this.flpsk.Controls.Add(this.button33);
+            this.flpsk.Controls.Add(this.button32);
+            this.flpsk.Controls.Add(this.button31);
+            this.flpsk.Controls.Add(this.button29);
+            this.flpsk.Controls.Add(this.button28);
+            this.flpsk.Controls.Add(this.button27);
+            this.flpsk.Controls.Add(this.button26);
+            this.flpsk.Controls.Add(this.button25);
+            this.flpsk.Controls.Add(this.button24);
+            this.flpsk.Controls.Add(this.button38);
+            this.flpsk.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpsk.Location = new System.Drawing.Point(3, 3);
+            this.flpsk.Name = "flpsk";
+            this.flpsk.Size = new System.Drawing.Size(797, 427);
+            this.flpsk.TabIndex = 32;
             // 
             // button30
             // 
@@ -960,43 +955,56 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.flpb);
             this.tabPage4.Font = new System.Drawing.Font("Book Antiqua", 14.25F);
-            this.tabPage4.Location = new System.Drawing.Point(4, 24);
+            this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(792, 338);
+            this.tabPage4.Size = new System.Drawing.Size(1024, 467);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Balık";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // flpb
+            // 
+            this.flpb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpb.Location = new System.Drawing.Point(0, 0);
+            this.flpb.Name = "flpb";
+            this.flpb.Size = new System.Drawing.Size(1024, 467);
+            this.flpb.TabIndex = 0;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1032, 581);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sanal Pazar";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flpmy.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flpmk.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
-            this.flowLayoutPanel4.ResumeLayout(false);
+            this.flpme.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
             this.tabPage11.ResumeLayout(false);
-            this.flowLayoutPanel5.ResumeLayout(false);
+            this.flpsy.ResumeLayout(false);
             this.tabPage12.ResumeLayout(false);
-            this.flowLayoutPanel6.ResumeLayout(false);
+            this.flpsk.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1026,12 +1034,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage11;
-        private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.TabPage tabPage12;
         private System.Windows.Forms.Button button45;
         private System.Windows.Forms.Button button48;
@@ -1078,11 +1084,13 @@
         private System.Windows.Forms.Button button35;
         private System.Windows.Forms.Button button36;
         private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
+        private System.Windows.Forms.FlowLayoutPanel flpst;
+        private System.Windows.Forms.FlowLayoutPanel flpmy;
+        private System.Windows.Forms.FlowLayoutPanel flpmk;
+        private System.Windows.Forms.FlowLayoutPanel flpme;
+        private System.Windows.Forms.FlowLayoutPanel flpsy;
+        private System.Windows.Forms.FlowLayoutPanel flpsk;
+        private System.Windows.Forms.FlowLayoutPanel flpb;
+        private System.Windows.Forms.Label lblName;
     }
 }

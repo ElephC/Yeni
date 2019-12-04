@@ -1,4 +1,5 @@
-﻿using Getir1.Properties;
+﻿using Getir1.Data;
+using Getir1.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace Getir1
 {
     public partial class LogInScreen : Form
     {
+        SqlData sqlData;
         public LogInScreen()
         {
             InitializeComponent();
@@ -20,9 +22,18 @@ namespace Getir1
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
-            f.Show();
-            this.Hide();
+            sqlData = new SqlData();
+            if(sqlData.Login(txtEmail.Text, txtPassword.Text))
+            {
+                LoadingScreen f = new LoadingScreen(txtEmail.Text);
+                f.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Kullanici adi yada sifre hatali");
+            }
+
         }
 
 

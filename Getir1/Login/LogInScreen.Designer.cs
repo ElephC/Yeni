@@ -30,13 +30,13 @@
         {
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblBtnSifremiUnuttum = new System.Windows.Forms.Label();
-            this.lblBtnHesabımYok = new System.Windows.Forms.Label();
             this.btnSee = new System.Windows.Forms.Button();
+            this.lblBtnHesabımYok = new System.Windows.Forms.Label();
+            this.lblBtnSifremiUnuttum = new System.Windows.Forms.Label();
             this.pBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxLogo)).BeginInit();
@@ -66,13 +66,13 @@
             this.lblPassword.TabIndex = 4;
             this.lblPassword.Text = "Şifre";
             // 
-            // txtUsername
+            // txtEmail
             // 
-            this.txtUsername.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtUsername.Location = new System.Drawing.Point(15, 163);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(233, 27);
-            this.txtUsername.TabIndex = 5;
+            this.txtEmail.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtEmail.Location = new System.Drawing.Point(15, 163);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(233, 27);
+            this.txtEmail.TabIndex = 5;
             // 
             // txtPassword
             // 
@@ -107,39 +107,13 @@
             this.panel1.Controls.Add(this.btnLogIn);
             this.panel1.Controls.Add(this.pBoxLogo);
             this.panel1.Controls.Add(this.lblEmail);
-            this.panel1.Controls.Add(this.txtUsername);
+            this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(282, 399);
             this.panel1.TabIndex = 9;
-            // 
-            // lblBtnSifremiUnuttum
-            // 
-            this.lblBtnSifremiUnuttum.AutoSize = true;
-            this.lblBtnSifremiUnuttum.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblBtnSifremiUnuttum.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBtnSifremiUnuttum.ForeColor = System.Drawing.Color.White;
-            this.lblBtnSifremiUnuttum.Location = new System.Drawing.Point(16, 339);
-            this.lblBtnSifremiUnuttum.Name = "lblBtnSifremiUnuttum";
-            this.lblBtnSifremiUnuttum.Size = new System.Drawing.Size(129, 19);
-            this.lblBtnSifremiUnuttum.TabIndex = 8;
-            this.lblBtnSifremiUnuttum.Text = "-Şifremi Unuttum";
-            this.lblBtnSifremiUnuttum.Click += new System.EventHandler(this.lblBtnSifremiUnuttum_Click);
-            // 
-            // lblBtnHesabımYok
-            // 
-            this.lblBtnHesabımYok.AutoSize = true;
-            this.lblBtnHesabımYok.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblBtnHesabımYok.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBtnHesabımYok.ForeColor = System.Drawing.Color.White;
-            this.lblBtnHesabımYok.Location = new System.Drawing.Point(16, 311);
-            this.lblBtnHesabımYok.Name = "lblBtnHesabımYok";
-            this.lblBtnHesabımYok.Size = new System.Drawing.Size(107, 19);
-            this.lblBtnHesabımYok.TabIndex = 9;
-            this.lblBtnHesabımYok.Text = "-Hesabım Yok";
-            this.lblBtnHesabımYok.Click += new System.EventHandler(this.lblBtnHesabımYok_Click);
             // 
             // btnSee
             // 
@@ -155,6 +129,32 @@
             this.btnSee.TabIndex = 10;
             this.btnSee.UseVisualStyleBackColor = true;
             this.btnSee.Click += new System.EventHandler(this.btnSee_Click);
+            // 
+            // lblBtnHesabımYok
+            // 
+            this.lblBtnHesabımYok.AutoSize = true;
+            this.lblBtnHesabımYok.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblBtnHesabımYok.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBtnHesabımYok.ForeColor = System.Drawing.Color.White;
+            this.lblBtnHesabımYok.Location = new System.Drawing.Point(16, 311);
+            this.lblBtnHesabımYok.Name = "lblBtnHesabımYok";
+            this.lblBtnHesabımYok.Size = new System.Drawing.Size(107, 19);
+            this.lblBtnHesabımYok.TabIndex = 9;
+            this.lblBtnHesabımYok.Text = "-Hesabım Yok";
+            this.lblBtnHesabımYok.Click += new System.EventHandler(this.lblBtnHesabımYok_Click);
+            // 
+            // lblBtnSifremiUnuttum
+            // 
+            this.lblBtnSifremiUnuttum.AutoSize = true;
+            this.lblBtnSifremiUnuttum.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblBtnSifremiUnuttum.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBtnSifremiUnuttum.ForeColor = System.Drawing.Color.White;
+            this.lblBtnSifremiUnuttum.Location = new System.Drawing.Point(16, 339);
+            this.lblBtnSifremiUnuttum.Name = "lblBtnSifremiUnuttum";
+            this.lblBtnSifremiUnuttum.Size = new System.Drawing.Size(129, 19);
+            this.lblBtnSifremiUnuttum.TabIndex = 8;
+            this.lblBtnSifremiUnuttum.Text = "-Şifremi Unuttum";
+            this.lblBtnSifremiUnuttum.Click += new System.EventHandler(this.lblBtnSifremiUnuttum_Click);
             // 
             // pBoxLogo
             // 
@@ -192,7 +192,7 @@
         private System.Windows.Forms.PictureBox pBoxLogo;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogIn;
         private System.Windows.Forms.Panel panel1;

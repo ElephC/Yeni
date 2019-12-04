@@ -13,9 +13,11 @@ namespace Getir1
 {
     public partial class LoadingScreen : Form
     {
-        public LoadingScreen()
+        string email;
+        public LoadingScreen(string email)
         {
             InitializeComponent();
+            this.email = email;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -24,7 +26,7 @@ namespace Getir1
             if(panel2.Width >= 700)
             {
                 timer1.Stop();
-                LogInScreen f = new LogInScreen();
+                Form2 f = new Form2(email);
                 f.Show();
                 this.Hide();
             }

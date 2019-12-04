@@ -9,11 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.Net.Mail;
+using Getir1.Data;
 
 namespace Getir1
 {
     public partial class ForgetPasswordScreen : Form
     {
+        SqlData sqlData;
+        int newPass;
         public ForgetPasswordScreen()
         {
             InitializeComponent();
@@ -21,7 +24,22 @@ namespace Getir1
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            SendEmail();
+            sqlData = new SqlData();
+            if (sqlData.NewPassword(txtEmail.Text, getNewPass()))
+            {
+                SendEmail();
+            }
+            else
+            {
+                MessageBox.Show("Hata");
+            }
+            
+        }
+        
+        private int getNewPass()
+        {
+            newPass = 123;
+            return newPass;
         }
 
         private void ForgetPasswordScreen_Load(object sender, EventArgs e)
@@ -54,7 +72,7 @@ namespace Getir1
 
                 mail.Subject = "Yeni Şifre";
                 mail.IsBodyHtml = true;
-                mail.Body = "Yeni Şifreniz : 000111222";
+                mail.Body = "Yeni Şifreniz : " + newPass;
 
                 sc.Send(mail);
 
